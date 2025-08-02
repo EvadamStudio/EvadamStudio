@@ -1,3 +1,7 @@
+@media (max-width: 768px) {
+  .intro-video {
+    height: 80vh; /* reduce un poco en móvil */
+  }
 .intro-video {
     height: 100vh;
     overflow: hidden;
@@ -82,4 +86,5 @@
   max-width: 90%;
   z-index: 10;
 }
+
 
