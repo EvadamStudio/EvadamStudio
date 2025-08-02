@@ -463,7 +463,11 @@ button[type="submit"]:hover {
   height: auto;
   object-fit: cover;
 }
-
+@media (max-width: 768px) {
+  .form-image {
+    display: none;
+  }
+}
 .form-check label {
   color: #F0B90B; /* Amarillo brillante */
   font-size: 14px;
@@ -498,3 +502,4 @@ button[type="submit"]:hover {
   transform: scale(1.2);
   color: #F0B90B;
 }
+
