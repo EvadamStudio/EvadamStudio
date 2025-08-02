@@ -12,51 +12,44 @@ body {
     font-family: 'Poppins', sans-serif;
 	background-color: #fef5f0;
 }
+/* Ocultar botón por defecto */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mostrar el botón y ocultar el menú en móviles */
 @media (max-width: 768px) {
-  /* General: reduce paddings y tamaños */
-  body {
-    font-size: 14px;
-  }
-
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 20px;
-  }
-
-  .logo-img {
-    height: 60px;
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1100;
   }
 
   .nav-links {
+    display: none;
     flex-direction: column;
-    width: 100%;
+    background-color: #120F0C;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 80%;
+    max-width: 250px;
+    border: 1px solid #fff;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: 1000;
   }
 
-  .nav-links a {
-    display: block;
-    margin: 10px 0;
-    font-size: 14px;
+  .nav-links.active {
+    display: flex;
   }
-
-  .intro-video {
-    height: 80vh;
-  }
-
-  .intro-text {
-    font-size: 1.2rem;
-    padding: 0 15px;
-  }
-
-  /* Ajustar secciones de contenido si usas grid o flex */
-  .faq-container {
-    flex-direction: column;
-  }
-
-  .faq-item {
-    width: 100%;
-  }
-
-  /* Otros ajustes visuales que necesites */
 }
+
 
