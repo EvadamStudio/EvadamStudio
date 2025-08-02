@@ -49,25 +49,11 @@ body {
     display: flex !important;
   }
 }
-body {
-    font-size: 14px;
-  }
-
-  .logo-img {
-    height: 60px;
-  }
-
-  .intro-video {
-    height: 80vh;
-  }
-
   .intro-text {
     font-size: 1.2rem;
     padding: 0 15px;
   }
 
-  /* Ajustar secciones de contenido si usas grid o flex */
-  .faq-container {
     flex-direction: column;
   }
 
@@ -77,6 +63,7 @@ body {
 
   /* Otros ajustes visuales que necesites */
 }
+
 
 
 
