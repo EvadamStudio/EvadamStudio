@@ -12,3 +12,9 @@ body {
     font-family: 'Poppins', sans-serif;
 	background-color: #fef5f0;
 }
+@media (max-width: 768px) {
+  .presentacion {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
