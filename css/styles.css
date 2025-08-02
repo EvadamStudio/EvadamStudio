@@ -12,7 +12,6 @@ body {
     font-family: 'Poppins', sans-serif;
 	background-color: #fef5f0;
 }
-/* Ocultar botón por defecto */
 .menu-toggle {
   display: none;
   background: none;
@@ -22,7 +21,6 @@ body {
   cursor: pointer;
 }
 
-/* Mostrar el botón y ocultar el menú en móviles */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -48,8 +46,9 @@ body {
   }
 
   .nav-links.active {
-    display: flex;
+    display: flex !important;
   }
 }
+
 
 
