@@ -1,5 +1,4 @@
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     const toggle = document.getElementById('menu-toggle');
     const navLinks = document.getElementById('nav-links');
 
@@ -7,4 +6,3 @@
       navLinks.classList.toggle('active');
     });
   });
-</script>
